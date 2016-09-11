@@ -5,7 +5,7 @@ neutron net-create ext-net --shared --router:external True \
 --provider:physical_network external --provider:network_type flat
 
 neutron subnet-create ext-net --name ext-subnet \
---allocation-pool start=mangeshend=mangesh \
+--allocation-pool start=mangesh end=mangesh \
 --disable-dhcp --gateway mangesh  mangesh/24
 
 neutron net-create admin-net
