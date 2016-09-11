@@ -87,6 +87,7 @@ admin_password = $service_pass
 
 " > /etc/nova/nova.conf
 
+#if compute node is virtual - change virt_type to qemu
 var=`egrep -c '(vmx|svm)' /proc/cpuinfo`
 
 
