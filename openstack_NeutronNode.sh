@@ -60,6 +60,8 @@ project_name = service
 username = neutron
 password = $service_pass
 
+[agent]
+root_helper = sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
 
 " > /etc/neutron/neutron.conf
 
