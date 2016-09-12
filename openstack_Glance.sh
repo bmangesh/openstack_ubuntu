@@ -97,3 +97,7 @@ service glance-api restart
 
 echo "export OS_IMAGE_API_VERSION=2" | tee -a /root/admin-openrc.sh 
 
+mkdir /tmp/images
+wget -P /tmp/images http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
+
+glance image-create --name "cirros-0.3.4-x86_64" --file /tmp/images/cirros-0.3.4-x86_64-disk.img --disk-format qcow2 --container-format bare --visibility public --progress
