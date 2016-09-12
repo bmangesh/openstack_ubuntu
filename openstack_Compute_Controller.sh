@@ -12,9 +12,9 @@ EOF
 
 #Source the admin credentials to gain access to admin-only CLI commands:
 
-/bin/sh /root/admin-openrc.sh
+. /root/admin-openrc.sh
 
-/bin/sh /root/requirment.sh 
+. /root/requirment.sh 
 #Create the nova user:
 
 openstack user create nova --password openstack
