@@ -20,7 +20,7 @@ apt-get install nova-compute sysfsutils -y
 
 service_pass=openstack
 
-/bin/sh  /root/requirment.sh
+.  /root/requirment.sh
 
 echo "
 [DEFAULT]
