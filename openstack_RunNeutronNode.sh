@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source /root/requirment.sh
+. /root/requirment.sh
 scp /root/requirment.sh $NET_IP:/root
 
 scp /etc/hosts $NET_IP:/etc/hosts
