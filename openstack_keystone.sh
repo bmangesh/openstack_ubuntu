@@ -53,8 +53,7 @@ su -s /bin/sh -c "keystone-manage db_sync" keystone
 
 #To configure the Apache HTTP server
 
-sed -i  's/^#ServerRoot "/etc/apache2"/ServerName controller/g' /etc/apache2/apache2.conf
-
+sed -i  's/^#ServerRoot \"\/etc\/apache2\"/ServerName controller/g' /etc/apache2/apache2.conf
 echo '
 Listen 5000
 Listen 35357
