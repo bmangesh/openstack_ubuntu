@@ -52,7 +52,7 @@ auth_strategy = keystone
 verbose = True
 my_ip = $Con_IP
 
-keys_path=$state_path/keys
+keys_path=\$state_path/keys
 state_path=/var/lib/nova
 lock_path=/var/lib/nova/tmp
 log_dir=/var/log/nova
