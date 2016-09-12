@@ -10,7 +10,7 @@ GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'controller' IDENTIFIED BY '$servic
 GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' IDENTIFIED BY '$service_pass';
 EOF
 
-/bin/sh /root/admin-openrc.sh
+. /root/admin-openrc.sh
 
 #Create the glance user:
 openstack user create  glance --password openstack
