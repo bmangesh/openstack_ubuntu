@@ -1,6 +1,6 @@
 #! /bin/bash
 
-/bin/sh /root/admin-openrc.sh
+.  /root/admin-openrc.sh
 
 openstack service create  --name keystone --description "OpenStack Identity" identity
 
