@@ -27,6 +27,7 @@ read -p "Enter the IP Address of Network Node    " network
 
 read -p "Enter Neutron INTERFACE_NAME To Use    " INTERFACE
 
+read -p "***Please Don't Use @ in Password***"
 read -p "Enter Password For OpenStack Services  " password
 
 cat > /root/requirment.sh <<EOF
