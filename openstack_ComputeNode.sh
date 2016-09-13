@@ -46,7 +46,7 @@ verbose = True
 vnc_enabled = True
 vncserver_listen = 0.0.0.0
 vncserver_proxyclient_address = $Comp_IP
-novncproxy_base_url = http://controller:6080/vnc_auto.html
+novncproxy_base_url = http://$Con_IP:6080/vnc_auto.html
 
 # Network Configuration
 
