@@ -1,6 +1,5 @@
 #! /bin/bash
 # Author : Mangeshkumar B Bharsakle
-
 . /root/requirment.sh
 scp /root/requirment.sh $Comp_IP:/root
 

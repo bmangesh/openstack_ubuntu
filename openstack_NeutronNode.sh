@@ -1,5 +1,4 @@
 #! /bin/bash
-
 # Author : Mangeshkumar B Bharsakle
 
 #Install Basic Packages
@@ -12,9 +11,6 @@ echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu" \
   "trusty-updates/kilo main" > /etc/apt/sources.list.d/cloudarchive-kilo.list
 
 apt-get update
-
-
-
 
 . /root/requirment.sh
 service_pass=openstack

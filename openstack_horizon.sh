@@ -1,5 +1,4 @@
 #! /bin/bash
-
 # Author : Mangeshkumar B Bharsakle
 
 #Install Horizon Package

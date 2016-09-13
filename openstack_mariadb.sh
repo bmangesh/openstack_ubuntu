@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Author : Mangeshkumar B Bharsakle
 
 # Make sure only root can run our script

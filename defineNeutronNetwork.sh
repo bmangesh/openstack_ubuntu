@@ -1,4 +1,5 @@
 #! /bin/bash
+
 . /root/admin-openrc.sh
 
 neutron net-create ext-net --shared --router:external True \

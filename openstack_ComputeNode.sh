@@ -10,13 +10,10 @@ echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu" \
 
 apt-get update
 
-
-
 service ntp restart
 #Install Compute-Node Packages
 
 apt-get install nova-compute sysfsutils -y
-
 
 service_pass=openstack
 
