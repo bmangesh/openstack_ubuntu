@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# Author : Mangeshkumar B Bharsakle
+
 # load service pass from config env
 service_pass=openstack
 # we create a quantum db irregardless of whether the user wants to install quantum

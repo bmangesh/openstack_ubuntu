@@ -1,5 +1,5 @@
 #! /bin/bash
-
+# Author : Mangeshkumar B Bharsakle
 
 apt-get install ntp -y
 #Install the rdo-release-kilo package to enable the RDO repository:

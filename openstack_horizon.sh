@@ -1,4 +1,7 @@
 #! /bin/bash
+
+# Author : Mangeshkumar B Bharsakle
+
 #Install Horizon Package
 
 apt-get install openstack-dashboard -y

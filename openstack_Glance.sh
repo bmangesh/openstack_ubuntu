@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# Author : Mangeshkumar B Bharsakle
 # load service pass from config env
 service_pass=openstack
 # we create a quantum db irregardless of whether the user wants to install quantum
@@ -101,6 +102,8 @@ mkdir /tmp/images
 wget -P /tmp/images http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
 
 glance image-list
+. /root/admin-openrc.sh
+
 glance image-create --name "cirros-0.3.4-x86_64" --file /tmp/images/cirros-0.3.4-x86_64-disk.img   --disk-format qcow2 --container-format bare --visibility public --progress
 
 glance image-list

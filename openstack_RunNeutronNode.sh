@@ -1,5 +1,5 @@
 #! /bin/bash
-
+# Author : Mangeshkumar B Bharsakle
 . /root/requirment.sh
 scp /root/requirment.sh $NET_IP:/root
 

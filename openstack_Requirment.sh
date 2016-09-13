@@ -1,4 +1,6 @@
 #! /bin/bash
+# Author : Mangeshkumar B Bharsakle
+
 # Make sure only root can run our script
 if [ "$(id -u)" != "0" ]; then
    echo "You need to be 'root' " 1>&2
@@ -45,9 +47,9 @@ ssh-keygen
 
 echo "Please Copy ssh-key ID in Compute Node"
 
-ssh-copy-id $compute
+ssh-copy-id compute
 
 echo "Please Copy ssh-key ID in Network Node"
 
-ssh-copy-id $network
+ssh-copy-id network
 
