@@ -45,6 +45,8 @@ username = neutron
 password = $service_pass
 [agent]
 root_helper = sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
+[oslo_concurrency]
+lock_path = \$state_path/lock
 
 " > /etc/neutron/neutron.conf
 
