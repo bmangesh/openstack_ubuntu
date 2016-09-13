@@ -46,7 +46,7 @@ sleep 4
 
 apt-get install rabbitmq-server -y
 
-sleep 50
+sleep 60
 
 #Add the openstack user to rabbitMQ
 
