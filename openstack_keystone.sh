@@ -2,7 +2,9 @@
 # Author : Mangeshkumar B Bharsakle
 
 # load service pass from config env
-service_pass=openstack
+. /root/requirment.sh
+
+service_pass=$openstack
 
 #Create keystone DB in mysql
 

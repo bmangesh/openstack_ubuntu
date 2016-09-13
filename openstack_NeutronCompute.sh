@@ -1,8 +1,8 @@
 #! /bin/bash
 # Author : Mangeshkumar B Bharsakle
-
-service_pass=openstack
 . /root/requirment.sh
+service_pass=$openstack
+
 echo "
 net.ipv4.conf.all.rp_filter=0
 net.ipv4.conf.default.rp_filter=0

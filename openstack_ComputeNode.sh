@@ -17,10 +17,10 @@ service ntp restart
 
 apt-get install nova-compute sysfsutils -y
 
+. /root/requirment.sh
 
-service_pass=openstack
+service_pass=$openstack
 
-.  /root/requirment.sh
 
 echo "
 [DEFAULT]

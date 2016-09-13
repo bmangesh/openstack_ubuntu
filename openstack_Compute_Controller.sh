@@ -3,8 +3,9 @@
 # Author : Mangeshkumar B Bharsakle
 
 # load service pass from config env
+. /root/requirment.sh
 
-service_pass=openstack
+service_pass=$openstack
 # we create a quantum db irregardless of whether the user wants to install quantum
 mysql -u root -popenstack <<EOF
 CREATE DATABASE nova;
@@ -17,7 +18,6 @@ EOF
 
 . /root/admin-openrc.sh
 
-. /root/requirment.sh 
 #Create the nova user:
 
 openstack user create nova --password openstack

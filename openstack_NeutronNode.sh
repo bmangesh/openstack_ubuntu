@@ -17,8 +17,8 @@ apt-get update
 
 
 . /root/requirment.sh
-service_pass=openstack
 
+service_pass=$openstack
 echo "
 
 net.ipv4.ip_forward=1
