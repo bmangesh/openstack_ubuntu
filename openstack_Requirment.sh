@@ -27,12 +27,15 @@ read -p "Enter the IP Address of Network Node    " network
 
 read -p "Enter Neutron INTERFACE_NAME To Use    " INTERFACE
 
+read -p "Enter Password For OpenStack Services  " password
+
 cat > /root/requirment.sh <<EOF
 # set up env variables for install
 export Con_IP=$controller
 export Comp_IP=$compute
 export NET_IP=$network
 export INTERFACE_NAME=$INTERFACE
+export openstack=$password
 EOF
 
 cat > /etc/hosts <<EOF
