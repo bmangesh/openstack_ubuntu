@@ -6,7 +6,7 @@
 
 service_pass=$openstack
 # we create a quantum db irregardless of whether the user wants to install quantum
-mysql -u root -popenstack <<EOF
+mysql -u root -p$service_pass <<EOF
 CREATE DATABASE glance;
 GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' IDENTIFIED BY '$service_pass';
 GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'controller' IDENTIFIED BY '$service_pass';
