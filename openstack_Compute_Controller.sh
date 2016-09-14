@@ -7,7 +7,7 @@
 
 service_pass=$openstack
 # we create a quantum db irregardless of whether the user wants to install quantum
-mysql -u root -popenstack <<EOF
+mysql -u root -p$service_pass <<EOF
 CREATE DATABASE nova;
 GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' IDENTIFIED BY '$service_pass';
 GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'controller' IDENTIFIED BY '$service_pass';
