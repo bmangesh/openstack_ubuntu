@@ -94,3 +94,5 @@ fi
 
 
 rm -f /var/lib/nova/nova.sqlite
+
+service nova-compute restart
