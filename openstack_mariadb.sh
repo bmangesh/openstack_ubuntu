@@ -7,6 +7,10 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+. /root/requirment.sh
+
+service_pass=$openstack
+
 # Install Basic Packages
 
 apt-get install ntp -y
@@ -22,7 +26,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 sudo -E apt-get -q -y install  mariadb-server python-mysqldb 
 
-mysqladmin -u root password openstack
+mysqladmin -u root password $openstack
 
 #Configure Mysql openstack file
 echo "
@@ -50,7 +54,7 @@ sleep 60
 
 #Add the openstack user to rabbitMQ
 
-rabbitmqctl add_user openstack openstack
+rabbitmqctl add_user openstack $openstack
 
 #Permit configuration, write, and read access for the openstack user:
 
