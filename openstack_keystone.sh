@@ -8,7 +8,7 @@ service_pass=$openstack
 
 #Create keystone DB in mysql
 
-mysql -u root -popenstack <<EOF
+mysql -u root -p$service_pass <<EOF
 CREATE DATABASE keystone;
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$service_pass';
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'controller' IDENTIFIED BY '$service_pass';
