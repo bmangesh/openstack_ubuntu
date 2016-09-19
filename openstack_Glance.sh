@@ -16,7 +16,7 @@ EOF
 . /root/admin-openrc.sh
 
 #Create the glance user:
-openstack user create  glance --password openstack
+openstack user create  glance --password $service_pass
 
 #Add the admin role to the glance user and service project:
 openstack role add --project service --user glance admin

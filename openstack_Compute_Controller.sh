@@ -20,7 +20,7 @@ EOF
 
 #Create the nova user:
 
-openstack user create nova --password openstack
+openstack user create nova --password $service_pass
 
 #Add the admin role to the nova user:
 

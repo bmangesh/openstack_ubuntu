@@ -19,7 +19,7 @@ EOF
 
 
 #Create the neutron user:
-openstack user create neutron --password openstack
+openstack user create neutron --password $service_pass
 
 #Add the admin role to the neutron user:
 

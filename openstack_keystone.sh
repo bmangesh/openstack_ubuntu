@@ -34,7 +34,7 @@ echo "
 admin_token =$token
 verbose = True
 [database]
-connection = mysql://keystone:openstack@controller/keystone
+connection = mysql://keystone:$service_pass@controller/keystone
 
 [memcache]
 servers = localhost:11211
