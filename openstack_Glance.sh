@@ -15,6 +15,10 @@ EOF
 
 . /root/admin-openrc.sh
 
+. /root/requirment.sh
+
+service_pass=$openstack
+
 #Create the glance user:
 openstack user create  glance --password $service_pass
 

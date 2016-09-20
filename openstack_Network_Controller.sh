@@ -17,6 +17,7 @@ EOF
 
 . /root/admin-openrc.sh
 
+. /root/requirment.sh
 
 #Create the neutron user:
 openstack user create neutron --password $service_pass

@@ -17,11 +17,16 @@ openstack endpoint create \
 
 #Create the admin project:
 
+. /root/requirment.sh
+
+service_pass=$openstack
+
+
 openstack project create --description "Admin Project" admin
 
 #Create the admin user:
 
-openstack user create admin --password openstack
+openstack user create admin --password $service_pass
 
 #Create the admin role:
 

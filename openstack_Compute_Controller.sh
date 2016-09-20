@@ -19,6 +19,9 @@ EOF
 . /root/admin-openrc.sh
 
 #Create the nova user:
+. /root/requirment.sh
+
+service_pass=$openstack
 
 openstack user create nova --password $service_pass
 
