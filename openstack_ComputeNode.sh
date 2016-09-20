@@ -95,5 +95,6 @@ if [  $var -eq 0 ]; then
  sed -i "s/virt_type=kvm/virt_type=qemu/g" /etc/nova/nova-compute.conf  
 fi
 
+service nova-compute restart
 
 rm -f /var/lib/nova/nova.sqlite
