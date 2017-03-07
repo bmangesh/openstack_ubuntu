@@ -42,6 +42,8 @@ openstack role add --project admin --user admin admin
 openstack project create --description "Service Project" service
 
 
+#Create the user role:
 
+#openstack role create user
 
 
