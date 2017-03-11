@@ -66,6 +66,7 @@ log_dir=/var/log/nova
 
 vncserver_listen = $Con_IP
 vncserver_proxyclient_address = $Con_IP
+allow_resize_to_same_host = True
 
 [database]
 connection = mysql://nova:$service_pass@controller/nova

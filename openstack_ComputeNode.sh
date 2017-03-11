@@ -54,7 +54,7 @@ network_api_class = nova.network.neutronv2.api.API
 security_group_api = neutron
 linuxnet_interface_driver = nova.network.linux_net.LinuxOVSInterfaceDriver
 firewall_driver = nova.virt.firewall.NoopFirewallDriver
-
+allow_resize_to_same_host = True
 
 [oslo_messaging_rabbit]
 rabbit_host = controller
