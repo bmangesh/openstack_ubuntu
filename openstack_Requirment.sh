@@ -41,6 +41,7 @@ EOF
 
 cat > /etc/hosts <<EOF
 #Openstack FDDN
+127.0.0.1 localhost
 $controller controller
 $compute  compute
 $network network
