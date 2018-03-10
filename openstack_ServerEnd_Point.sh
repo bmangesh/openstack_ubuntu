@@ -32,6 +32,10 @@ openstack user create admin --password $service_pass
 
 openstack role create admin
 
+#Add the user role
+
+openstack role create user
+
 #Add the admin role to the admin project and user:
 
 openstack role add --project admin --user admin admin
