@@ -57,18 +57,19 @@ Once all 3 Node configured correctly. follow below  steps on 3  Node.
 12. Done after 20 min (depending on you Internet Provider speed).openstack is up and running 
 13. Login to horizon to validate installation. http://controller-ip/horizon
 14. For External Network follow below commands
-15. neutron net-create ext-net --router:external   --provider:physical_network external --provider:network_type flat
 
-16. neutron subnet-create ext-net 192.168.2.0/24  --name ext-subnet --allocation-pool start=192.168.122.170,end=192.168.122.180 --disable-dhcp --gateway  192.168.122.1
+                 neutron net-create ext-net --router:external   --provider:physical_network external --provider:network_type flat
 
-17. neutron net-create admin-net
+                 neutron subnet-create ext-net 192.168.2.0/24  --name ext-subnet --allocation-pool start=192.168.122.170,end=192.168.122.180 --disable-dhcp --gateway  192.168.122.1
 
-18. neutron subnet-create admin-net 10.10.10.0/24 --name admin-subnet --dns-nameserver 8.8.4.4 --gateway 10.10.10.1
+                neutron net-create admin-net
 
-19. neutron router-create admin-router
+                neutron subnet-create admin-net 10.10.10.0/24 --name admin-subnet --dns-nameserver 8.8.4.4 --gateway 10.10.10.1
 
-20 .neutron router-interface-add admin-router admin-subnet
+                neutron router-create admin-router
 
-21. neutron router-gateway-set admin-router ext-net
+                neutron router-interface-add admin-router admin-subnet
+
+                neutron router-gateway-set admin-router ext-net
 
 
