@@ -14,7 +14,7 @@ Below are minimal specification of my nodes
         Network node    :- 2 GB RAM, 1 core CPU, 50 GB storage, eth0, eth1, br-ex 
         Compute node    :- 4 GB RAM, 2 core CPU, 50 GB storage, eth0 
 
-Please follow below steps to create br-ex (make sure that you have attached 2 NIC to network Node)
+Please follow below steps in Network Node to create br-ex (make sure that you have attached 2 NIC to network Node)
 Edit /etc/network/interfaces add below configuration according to your network.
 
 
