@@ -10,9 +10,9 @@ If you have created you Neutron node on ESXi please make sure that promiscuous m
 
 Below are minimal specification of my nodes
 
-Controller node :- 4 GB RAM, 2 core CPU, 50 GB storage, eth0 
-Network node    :- 2 GB RAM, 1 core CPU, 50 GB storage, eth0, eth1, br-ex 
-Compute node    :- 4 GB RAM, 2 core CPU, 50 GB storage, eth0 
+        Controller node :- 4 GB RAM, 2 core CPU, 50 GB storage, eth0 
+        Network node    :- 2 GB RAM, 1 core CPU, 50 GB storage, eth0, eth1, br-ex 
+        Compute node    :- 4 GB RAM, 2 core CPU, 50 GB storage, eth0 
 
 Please follow below steps to create br-ex (make sure that you have attached 2 NIC to network Node)
 Edit /etc/network/interfaces add below configuration according to your network.
