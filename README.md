@@ -1,8 +1,12 @@
 # openstack_ubuntu
 OpenStack Kilo  Scripted Install with Neutron on MultiNode Ubuntu
+
 For these please create 3 Node on any Virtualization Platform like VMware Workstation,VirtualBox,KVM,ESXi
+
 Note* I have tested it on Ubuntu-14.04 on VMware Workstation,KVM and ESXi-6 Platform 
+
 If you have created you Neutron node on ESXi please make sure that promiscuous mode is on ESXi network interface.
+
 
 Below are minimal specification of my nodes
 
@@ -13,26 +17,27 @@ Compute node    :- 4 GB RAM, 2 core CPU, 50 GB storage, eth0
 Please follow below steps to create br-ex (make sure that you have attached 2 NIC to network Node)
 Edit /etc/network/interfaces add below configuration according to your network.
 
-auto eth0
-iface eth0 inet static
-        address 192.168.122.10
-        netmask 255.255.255.0
-        gateway 192.168.122.1
-        dns-nameserver 8.8.8.8
+
+        auto eth0
+                iface eth0 inet static
+                address 192.168.122.10
+                netmask 255.255.255.0
+                gateway 192.168.122.1
+                dns-nameserver 8.8.8.8
 
 
-auto eth1
-iface eth1 inet static
-        address 0.0.0.0
-        netmask 0.0.0.0
+        auto eth1
+                iface eth1 inet static
+                address 0.0.0.0
+                netmask 0.0.0.0
 
 
-auto br-ex
-iface br-ex inet static
-        address 192.168.122.11
-        netmask 255.255.255.0
-        gateway 192.168.122.1
-        dns-nameserver 8.8.8.8
+        auto br-ex
+                iface br-ex inet static
+                address 192.168.122.11
+                netmask 255.255.255.0
+                gateway 192.168.122.1
+                dns-nameserver 8.8.8.8
         
         
 Once all 3 Node configured correctly. follow below  steps on 3  Node.
